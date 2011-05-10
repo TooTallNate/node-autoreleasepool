@@ -9,7 +9,4 @@ var pool = new (module.exports.AutoreleasePool)();
 
 // We hook onto the process' 'exit' event in order to ensure that we drain
 // at the last possible moment.
-process.on('exit', function() {
-  //console.error('Draining the "NSAutoreleasePool"');
-  pool.drain();
-});
+process.on('exit', pool.drain.bind(pool));
