@@ -17,17 +17,19 @@ autorelease pool at the last possible moment.
 Dead-Simple Usage
 -----------------
 
-    // Takes care of setting up a shared NSAutoreleasePool
-    require('autoreleasepool');
+``` javascript
+// Takes care of setting up a shared NSAutoreleasePool
+require('autoreleasepool');
 
-    // Now do other things in Obj-C land and the runtime won't display
-    // the "no autorelease pool, just leaking" message.
+// Now do other things in Obj-C land and the runtime won't display
+// the "no autorelease pool, just leaking" message.
+```
 
 
 API
 ---
 
-If you, for some weird reason, need to create another `NSAutoreleasePool`
+If, for some weird reason, you need to create another `NSAutoreleasePool`
 instance, it's simple to do so:
 
     var pool = new autoreleasepool.AutoreleasePool();
