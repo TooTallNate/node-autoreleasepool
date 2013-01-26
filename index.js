@@ -1,6 +1,6 @@
 // Export the 'AutoreleasePool' constructor, in case the user want to create
 // another autorelease pool from the default one created below...
-module.exports = require('./build/default/binding.node');
+module.exports = require('./build/Release/binding.node');
 
 // A "default" pool is created the first time this module is require'd, so
 // any module requireing NSAutoreleasePool functionality just needs to require this
