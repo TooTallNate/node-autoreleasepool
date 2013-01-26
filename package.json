@@ -15,8 +15,5 @@
     "node": "*"
   },
   "dependencies": {},
-  "devDependencies": {},
-  "scripts": {
-    "preinstall": "node-waf clean || true; node-waf configure build"
-  }
+  "devDependencies": {}
 }
