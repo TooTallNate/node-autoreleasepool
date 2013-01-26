@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/TooTallNate/node-autoreleasepool.png)](http://travis-ci.org/TooTallNate/node-autoreleasepool)
 node-autoreleasepool
 ====================
 ### A very simple wrapper around the OS X [NSAutoreleasePool][], for [NodeJS][Node].
